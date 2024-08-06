@@ -73,7 +73,6 @@ const Manager = () => {
     }
 
     const deletepassword = (id) => {
-        console.log("Deleting password with id ", id)
         let c = confirm("Do you  want to delete this password?")
         if(c){
             setPasswordArray(passwordArray.filter(item=>item.id!==id))
@@ -93,7 +92,6 @@ const Manager = () => {
     }
     const editpassword = (id) => {
          
-        console.log("Editing password with id ", id)
         setform(passwordArray.filter(i=>i.id===id)[0]) 
         setPasswordArray(passwordArray.filter(item=>item.id!==id)) 
 
